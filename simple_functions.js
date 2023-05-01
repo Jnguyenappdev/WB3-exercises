@@ -6,23 +6,37 @@
 //3. Fave place
 //   display and descibe your favorite place to visit and why
 
-function favoriteThings(){
-    console.log("My name: Julle")
-    console.log("Favorite movie: Howl's Moving castle or anything Ghibli")
-    console.log("Favorite Musician: Danelia Andrea")
-}
+//defining set of instructions
 
-favoriteThings();
+function favoriteThings(){
+    console.log("My name: Julle");
+    console.log("Favorite movie: Howl's Moving castle or anything Ghibli");
+    console.log("Favorite Musician: Danelia Andrea");
+}
 
 function whyImHere(){
-    console.log("I am in LTC to have a brighter future.")
+    console.log("I am in LTC to have a brighter future.");
 }
-
-whyImHere();
 
 function favoritePlace(){
-    console.log("Location: Flordia")
-    console.log("Why? : I feel like the gulf rejuvenates my soul.")
+    console.log("Location: Flordia");
+    console.log("Why? : I feel like the gulf rejuvenates my soul.");
 }
 
+// runing at end for use at later time
+favoriteThings();
+console.log('----')
+whyImHere();
+console.log('----')
 favoritePlace();
+
+
+//in class exercise
+
+const distance = -5;
+let positiveDistance = Math.abs(distance)
+
+console.log('----')
+
+console.log('distance', distance)
+console.log('positive distance', positiveDistance)
