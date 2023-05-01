@@ -16,8 +16,8 @@ function getSocSecTax(grossPaySocSec){
     return socSecTaxAmount
 }
 
-let socSecTaxAmount = getSocSecTax(20000)
-console.log(`Social Security Amount: $ ${socSecTaxAmount.toFixed(2)}`)
+
+console.log(`Social Security Amount: $ ${getSocSecTax(20000).toFixed(2)}`)
 
 // 2. 
 
@@ -27,8 +27,8 @@ function getMedicareTax(grossPayMedicare){
     return medicareAmount
 }
 
-let medicareAmount = getMedicareTax(200)
-console.log(`Medicare Amount: $ ${medicareAmount.toFixed(2)}`)
+
+console.log(`Medicare Amount: $ ${getMedicareTax(200).toFixed(2)}`)
 
 // 3.
 
@@ -46,14 +46,13 @@ function getFederalTax(grossPayFederal, withholdingCode){
     }
 
     let withholdingAmount = grossPayFederal * tax
-    return withholdingAmount.toFixed(2)
+    return withholdingAmount
 }
 
-let withholdingAmount  = getFederalTax(750, 0)
-console.log(`Person 1: Withholding Amount: $ ${withholdingAmount}`)
+// do not put toFixed() in function because it will be some discepancy in accuracy
 
-withholdingAmount  = getFederalTax(1550, 2)
-console.log(`Person 2: Withholding Amount: $ ${withholdingAmount}`)
+console.log(`Person 1: Withholding Amount: $ ${getFederalTax(750, 0).toFixed(2)}`)
 
-withholdingAmount  = getFederalTax(1100, 6)
-console.log(`Person 3: Withholding Amount: $ ${withholdingAmount}`)
+console.log(`Person 2: Withholding Amount: $ ${getFederalTax(1550, 2).toFixed(2)}`)
+
+console.log(`Person 3: Withholding Amount: $ ${getFederalTax(1100, 6).toFixed(2)}`)
