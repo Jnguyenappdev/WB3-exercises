@@ -1,0 +1,32 @@
+const d = new Date()
+
+const months = [
+    "Janurary",
+    "Feburary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+];
+
+const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
+
+let day = d.getDate();
+let month = d.getMonth();
+let year = d.getFullYear();
+let weekdayName = weekdays[d.getDay()]
+console.log(`${day} - ${month} - ${year} ${weekdayName}`)
